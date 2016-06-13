@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kivi.esport.layouts.Authentication.AuthenticationController">
+   <children>
+      <CheckBox fx:id="useLocal" layoutX="328.0" layoutY="120.0" mnemonicParsing="false" onAction="#useLocalChecked" selected="true" text="Use local" />
+      <Label layoutX="69.0" layoutY="31.0" text="Authentication in eSport database">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="93.0" text="IP address" />
+      <Label layoutX="75.0" layoutY="152.0" text="Port" />
+      <Label layoutX="69.0" layoutY="211.0" text="Login" />
+      <Label layoutX="39.0" layoutY="273.0" text="Password" />
+      <Label fx:id="info" layoutX="303.0" layoutY="341.0" prefHeight="27.0" prefWidth="128.0" />
+      <TextField fx:id="ipField" disable="true" layoutX="133.0" layoutY="87.0" prefHeight="39.0" prefWidth="160.0" promptText="255.255.255.255" />
+      <TextField fx:id="portField" disable="true" layoutX="133.0" layoutY="146.0" prefHeight="39.0" prefWidth="160.0" promptText="12345" />
+      <TextField fx:id="loginField" layoutX="133.0" layoutY="205.0" onKeyPressed="#keyOnFieldsPressed" prefHeight="39.0" prefWidth="300.0" />
+      <PasswordField fx:id="passwordField" layoutX="133.0" layoutY="267.0" onKeyPressed="#keyOnFieldsPressed" prefHeight="39.0" prefWidth="300.0" />
+      <Button fx:id="logIn" layoutX="220.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#logInClicked" text="Log in" />
+      <Label layoutX="86.0" layoutY="406.0" text="Powered by" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="257.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../res/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

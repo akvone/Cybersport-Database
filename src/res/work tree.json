@@ -1,0 +1,239 @@
+{
+  "treeView": {
+    "Add entities": {
+      "Add new player": {
+        "type": "addEntity",
+        "nameInDatabase": "addPlayerProc",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Nickname"
+            },
+            {
+              "promptText": "Name"
+            },
+            {
+              "promptText": "Country"
+            },
+            {
+              "promptText": "Skill Points"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Add",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Add new team": {
+        "type": "addEntity",
+        "nameInDatabase": "addTeamProc",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Team name"
+            },
+            {
+              "promptText": "Location"
+            },
+            {
+              "promptText": "Creation Time"
+            },
+            {
+              "promptText": "Captain Nickname"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Add",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Add player in team": {
+        "type": "addEntity",
+        "nameInDatabase": "addPlayerRosterEntityProc",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Player nickname"
+            },
+            {
+              "promptText": "Team name"
+            },
+            {
+              "promptText": "Envolved (YYYY-MM-DD)"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Add",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Add team in tournament": {
+        "type": "addEntity",
+        "nameInDatabase": "addTournamentParticipantEntityProc",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Team name"
+            },
+            {
+              "promptText": "Tournament name"
+            },
+            {
+              "promptText": "Place"
+            },
+            {
+              "promptText": "Prize"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Add",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      }
+    },
+    "Different features": {
+      "Get top N players": {
+        "type": "receiveTableSendFields",
+        "nameInDatabase": "bestNPlayersProc",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Number of players"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Get",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Get team roster": {
+        "type": "receiveTableSendFields",
+        "nameInDatabase": "getTeamRosterProc",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Team name"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Get",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Get average skill points for best N players": {
+        "type": "getAvgSPforNPlayers",
+        "nameInDatabase": "",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Number of players"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Create table",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Get skill points of player": {
+        "type": "getPlayerSkillPoints",
+        "nameInDatabase": "",
+        "workingDirectory": {
+          "textFields": [
+            {
+              "promptText": "Player nickname"
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Get",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      }
+    },
+    "Show views": {
+      "Show Russian Players": {
+        "type": "view",
+        "nameInDatabase": "view_russian_players",
+        "workingDirectory": {
+          "buttons": [
+            {
+              "text": "Load to additional tab",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Show top 10 players": {
+        "type": "view",
+        "nameInDatabase": "view_top_10_players",
+        "workingDirectory": {
+          "buttons": [
+            {
+              "text": "Load to additional tab",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Show top 100 players": {
+        "type": "view",
+        "nameInDatabase": "view_top_100_players",
+        "workingDirectory": {
+          "buttons": [
+            {
+              "text": "Load to additional tab",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Get team table with average SP of it's players ": {
+        "type": "view",
+        "nameInDatabase": "view_avg_SP_for_team_players",
+        "workingDirectory": {
+          "buttons": [
+            {
+              "text": "Load to additional tab",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      },
+      "Get Virtus.pro players": {
+        "type": "view",
+        "nameInDatabase": "view_virtus_pro",
+        "workingDirectory": {
+          "buttons": [
+            {
+              "text": "Load to additional tab",
+              "listenerFunction": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

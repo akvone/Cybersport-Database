@@ -13,5 +13,5 @@ Authentication:
 
 Main menu:
 <br />
-![Some image](doc/main menu.png)
+![Some image](doc/main_menu.png)
 
